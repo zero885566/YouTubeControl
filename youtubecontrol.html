@@ -212,7 +212,7 @@
       
         <script type="text/x-template" id="play">
                 <div class="textcontrol">
-                  <input type="text" v-model="test">  
+                  <input type="text" v-model="test" >  
                   <button @click='creat'>Go</button>
                   <!-- <div id="video"></div> -->
                 </div>
@@ -225,7 +225,7 @@
             el: '#target',
             data() {
               return {
-                test: '',
+                test: '請輸入嵌入影片',
               }
             },
             template: "#play",
