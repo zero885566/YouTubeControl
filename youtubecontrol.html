@@ -189,8 +189,10 @@
 
 
         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/9iZHB8tKw_0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           -->
+          
+        https://youtu.be/7oi6POMgV_I
 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7oi6POMgV_I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 
     <!-- Optional JavaScript -->
@@ -231,14 +233,16 @@
             template: "#play",
             methods: {
               creat() {
-                let dom = this.test
+                let dom = this.test.slice(17);
+                let youtubesrc = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${dom}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
                 console.log(dom)
                 // document.getElementById("video").innerHTML = dom;
-                $("#video").append(dom)
+                $("#video").append(youtubesrc)
               }
             },
           })
-      
+
+
       
         </script>
 </body>
