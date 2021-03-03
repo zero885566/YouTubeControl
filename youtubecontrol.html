@@ -1,250 +1,229 @@
-<!doctype html>
-<html lang="en">
+      <!doctype html>
+      <html lang="en">
 
-<head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      </head>
 
-<body>
+      <body>
 
-    <style>
-        body {
-          height: 100vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          background: url(/img/資產\ 2-100.jpg) no-repeat center/100%;
-          background-size: cover;
-        }
-    
-        .textcontrol {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-          margin:5%;  
-        }
-    
-        input {
-          width: 50vw;
-          height: 60px;
-          border: 3px #ffffff solid;
-          background: unset;
-          border-radius: 8px;
-          transition: 1S;
-          caret-color: unset;
-          outline: unset;
-          padding: 3%;
-          margin: 0 1px 0 0;
-          color: #ffffff;
-          margin: 2%;
-          font-size: xx-large;
-        }
-    
-        button {
-          width: 35vw;
-          height: 80px;
-          background-color: #80490a;
-          border: unset;
-          border-radius: 15px;
-          box-shadow: none;
-          color: #ffffff;
-          font-size: 45px;
-          font-weight: bold;
-          margin-top: 2%;
-        }
-    
-        .outside {
-          width: 35%;
-          height: auto;
-          position: relative;
-          margin-top: 5%;
-        }
-
-        .outside img{
-          position: absolute;
-          width: 105%;
-          height: auto;
-          right: -2%;
-          top: -25%;
-        }
-    
-        .video-container {
-          position: relative;
-          padding-bottom: 56.25%;
-          padding-top: 30px;
-          height: 0;
-          /* overflow: hidden; */
-        }
-        
-        @keyframes show {
-          from{
-            height:  0;
+        <style>
+          body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url(/img/資產\ 2-100.jpg) no-repeat center/100%;
+            background-size: cover;
           }
-          to{
-            height: 100%;
+
+          .textcontrol {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 5%;
           }
-        }
 
-        .video-container iframe,
-        .video-container object,
-        .video-container embed {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          animation: show 3s linear  ;
-        }
+          input {
+            width: 50vw;
+            height: 60px;
+            border: 3px #ffffff solid;
+            background: unset;
+            border-radius: 8px;
+            transition: 1S;
+            caret-color: unset;
+            outline: unset;
+            padding: 3%;
+            margin: 0 1px 0 0;
+            color: #ffffff;
+            margin: 2%;
+            font-size: xx-large;
+          }
 
+          button {
+            width: 35vw;
+            height: 80px;
+            background-color: #80490a;
+            border: unset;
+            border-radius: 15px;
+            box-shadow: none;
+            color: #ffffff;
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 2%;
+          }
 
+          .outside {
+            width: 375px;
+            height: auto;
+            position: relative;
+            margin-top: 5%;
+            border-right: #F59143 4px solid; 
+            border-left:#F59143 4px solid ;
+            border-bottom: #F59143 4px solid;
+            border-radius: 10px;
+          }
 
-        @media screen and (max-width: 768px) {
-            input{
-                width: 75vw;
-                height: 45px;
+          p{
+            font-size: xx-large;
+            background-color: #F59143;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+            height: auto;
+          }
+
+          span {
+            font-size: medium;
+            color: #ffffff;
+            width: 35%;
+            background-color: #76BD34;
+            padding: 2%;
+            border-radius: 10px;
+            text-align: center;
+          }
+
+          @keyframes show {
+            from {
+              height: 0;
             }
-            button{
-                width: 45vw;
-                height: 50px;
-                font-size: 25px;
+
+            to {
+              height: 100%;
             }
-            .outside{
-                width: 90%;
+          }
+
+
+
+
+          @media screen and (max-width: 768px) {
+            input {
+              width: 75vw;
+              height: 45px;
             }
-            body{
+
+            button {
+              width: 45vw;
+              height: 50px;
+              font-size: 25px;
+            }
+
+            body {
               background-size: 360%;
               background-position: left bottom;
             }
-        }
+          }
+          span{
+              width: 75%;
+          }
 
-        .rwdonly{
-          display: none;
-        }
+          .rwdonly {
+            display: none;
+          }
 
-        @media screen and (max-width: 380px) {
-            body{
-                justify-content: space-evenly;
+          @media screen and (max-width: 380px) {
+            body {
+              justify-content: space-evenly;
             }
-            input{
-                width: 75vw;
+
+            input {
+              width: 75vw;
             }
-            button{
-                width: 45vw;
-                margin: 7%;
+
+            button {
+              width: 45vw;
+              margin: 7%;
             }
-            .outside{
-                width: 100%;
-            }
-            .outside img{
-              width: unset;
-              right: unset;
-            }
-            .rwdonly{
-              display: unset;
-            }
-            .rwdnone{
-              display: none;
-            }
-            body{
+
+            body {
               background-size: 400%;
               background-position: left bottom;
             }
-        }
-
-        .video-container{
-            padding-top: unset;
-        }
+          }
+        </style>
 
 
+        <span id="model">RWD 語法</span>
 
- 
-
-      </style>
-    
-
-    <div class="outside">
-      <img src="/img/資產 2.png" class="rwdnone"  alt="">
-      <img src="/img/rwd.png" class="rwdonly" alt="">
-      <div class="video-container" id="video">
-
-      </div>
-
-    </div>
-    
-        <div id="target">
-    
-          <play :test="test"></play>
-    
+        <div class="outside" id="video">
+          <p>設定外框 : 375px</p>
         </div>
-    
+
+        <div id="target">
+
+          <play :test="test"></play>
+
+        </div>
+
 
 
         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/9iZHB8tKw_0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          
-        https://youtu.be/7oi6POMgV_I
+                
+              https://youtu.be/7oi6POMgV_I
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7oi6POMgV_I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/7oi6POMgV_I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
           crossorigin="anonymous"></script>
-      
-      
+
+
         <script type="text/x-template" id="play">
-                <div class="textcontrol">
-                  <input type="text" v-model="test" >  
-                  <button @click='creat'>Go</button>
-                  <!-- <div id="video"></div> -->
-                </div>
-                
-          </script>
-      
+                      <div class="textcontrol">
+                        <input type="text" v-model="test" >  
+                        <button @click='creat'>Go</button>
+                        <!-- <div id="video"></div> -->
+                      </div>
+                      
+                </script>
+
         <script>
-      
+
           new Vue({
             el: '#target',
             data() {
               return {
-                test: '請輸入嵌入影片',
+                test: '請輸入 YouTube 網址',
               }
             },
             template: "#play",
             methods: {
               creat() {
                 let dom = this.test.slice(17);
-                let youtubesrc = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${dom}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+                let youtubesrc = `<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed//${dom}' frameborder='0' allowfullscreen></iframe></div>`
                 console.log(dom)
                 // document.getElementById("video").innerHTML = dom;
                 $("#video").append(youtubesrc)
+                $("#model").text(youtubesrc)
               }
             },
           })
 
 
-      
-        </script>
-</body>
 
-</html>
+        </script>
+      </body>
+
+      </html>
